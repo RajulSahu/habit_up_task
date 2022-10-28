@@ -65,7 +65,7 @@ class _UsersScreenState extends State<UsersScreen> {
       ),
       body: FutureBuilder(
         future: getData(),
-        builder: (contect, snapshot) {
+        builder: (context, snapshot) {
           if (!snapshot.hasData) {
             return const Center(child: CircularProgressIndicator());
           } else {
